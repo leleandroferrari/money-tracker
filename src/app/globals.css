@@ -1,0 +1,74 @@
+:root {
+  /* Dark Mode Palette */
+  --primary: #8E7CFF;
+  /* Slightly lighter purple for better contrast on dark */
+  --background: #121212;
+  /* Very Dark Grey */
+  --text: #E0E0E0;
+  /* Light Grey */
+
+  /* Functional Colors */
+  --expense: #FF5252;
+  --income: #69F0AE;
+  --card-bg: #1E1E1E;
+  /* Dark Surface */
+  --border: #333333;
+  --sidebar-bg: #1A1A1A;
+  --hover: #2C2C2C;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utils */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
