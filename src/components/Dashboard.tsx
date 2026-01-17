@@ -51,6 +51,10 @@ export default async function Dashboard() {
                 <TransactionList transactions={transactions} />
             </div>
 
+            <footer style={{ marginTop: '3rem', textAlign: 'center', color: '#666', fontSize: '0.9rem', paddingBottom: '2rem' }}>
+                <p>&copy; {new Date().getFullYear()} by Leandro Ferrari</p>
+            </footer>
+
             <Chatbot />
         </div>
     );
