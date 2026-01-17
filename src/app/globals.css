@@ -1,0 +1,70 @@
+:root {
+  /* Brand Guidelines Palette */
+  --primary: #6F5AE6; /* Purple - highlights/links only */
+  --background: #F5F1EC; /* Warm Off-White/Beige - Main bg */
+  --text: #2E2E2E; /* Dark Gray - Text color */
+  
+  /* Functional Colors */
+  --expense: #E53935;
+  --income: #43A047;
+  --card-bg: #FFFFFF;
+  --border: #E0E0E0;
+  --sidebar-bg: #FFFFFF;
+  --hover: #F0F0F0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Utils */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
