@@ -37,6 +37,18 @@ export default function TransactionList({ transactions }: { transactions: Transa
         setEditingId(null);
     };
 
+    const getIcon = (category: string, description: string) => {
+        const desc = description.toLowerCase();
+        if (desc.includes('food') || desc.includes('lunch') || desc.includes('coffee') || desc.includes('uber') || desc.includes('meal')) return '🍔';
+        if (desc.includes('tech') || desc.includes('software') || desc.includes('samsic') || desc.includes('digital')) return '💻';
+        if (desc.includes('rent') || desc.includes('office')) return '🏢';
+        if (desc.includes('apple') || desc.includes('mac')) return '🍎';
+        if (desc.includes('adobe')) return '🎨';
+        if (category === 'Income') return '💰';
+        if (category === 'Transport') return '🚗';
+        return '📄';
+    };
+
     return (
         <div className={styles.container}>
             <div className={styles.header}>
@@ -99,6 +111,7 @@ export default function TransactionList({ transactions }: { transactions: Transa
                                     <>
                                         <td>
                                             <div className={styles.desc}>
+                                                <span style={{ fontSize: '1.2rem' }}>{getIcon(t.category, t.description)}</span>
                                                 {t.description}
                                                 {Boolean(t.is_recurring) && <span className={styles.badge}>Recurring</span>}
                                             </div>

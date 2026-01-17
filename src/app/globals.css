@@ -1,16 +1,20 @@
 :root {
-  /* Brand Guidelines Palette */
-  --primary: #6F5AE6; /* Purple - highlights/links only */
-  --background: #F5F1EC; /* Warm Off-White/Beige - Main bg */
-  --text: #2E2E2E; /* Dark Gray - Text color */
-  
+  /* Dark Mode Palette */
+  --primary: #8E7CFF;
+  /* Slightly lighter purple for better contrast on dark */
+  --background: #121212;
+  /* Very Dark Grey */
+  --text: #E0E0E0;
+  /* Light Grey */
+
   /* Functional Colors */
-  --expense: #E53935;
-  --income: #43A047;
-  --card-bg: #FFFFFF;
-  --border: #E0E0E0;
-  --sidebar-bg: #FFFFFF;
-  --hover: #F0F0F0;
+  --expense: #FF5252;
+  --income: #69F0AE;
+  --card-bg: #1E1E1E;
+  /* Dark Surface */
+  --border: #333333;
+  --sidebar-bg: #1A1A1A;
+  --hover: #2C2C2C;
 }
 
 * {
@@ -44,8 +48,8 @@ a {
   background: var(--card-bg);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-  border: 1px solid rgba(0,0,0,0.03);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .btn {
